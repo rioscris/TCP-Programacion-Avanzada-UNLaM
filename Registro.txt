@@ -1,2 +1,7 @@
 09-09: Creacion del repositorio donde se trabajara y desarrollara el presente Trabajo para la asignatura de Programacion Avanzada.
 Comunicacion a los respectivos docentes de la catedra del repositorio de trabajo.
+
+28-09: Creación de las ventanas principales por separado. Modelo de uso. Funcionalidades aún no implementadas.
+
+29-09: Creación de la clase Usuario. Cambio de la ventana Conexión de ApplicationWindow a JDialog.
+(añadir la comunicacion de un usuario entre ventanas y cerrado correcto del ConexionDialog)
