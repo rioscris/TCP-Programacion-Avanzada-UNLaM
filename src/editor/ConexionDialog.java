@@ -23,7 +23,7 @@ public class ConexionDialog extends JDialog {
 	public static void main(String[] args) {
 		try {
 			ConexionDialog dialog = new ConexionDialog();
-			dialog.setDefaultCloseOperation(JDialog.EXIT_ON_CLOSE);
+			dialog.setDefaultCloseOperation(JDialog.EXIT_ON_CLOSE); // Forma de cerrar el dialogo
 			dialog.setVisible(true);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -34,12 +34,13 @@ public class ConexionDialog extends JDialog {
 	 * Create the dialog.
 	 */
 	public ConexionDialog() {
+		setResizable(false);
 		setTitle("Conexi\u00F3n");
 		setBounds(100, 100, 334, 218);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
-		contentPanel.setLayout(null);
+		contentPanel.setLayout(null); // SE USO ABSOLUTE LAYOUT, que en realidad no existe
 		
 		textField = new JTextField();
 		textField.setBounds(24, 34, 122, 20);
